@@ -28,7 +28,7 @@
         </button>
       </li>
       <li>
-        <button class="btn">
+        <button class="btn" onclick="fun4()">
           <img
             src="https://images.unsplash.com/photo-1524219726159-3cbf91ce4b70?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8Zmxvd2VyfHx8fHx8MTY3NTI2MzMxNQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"
             alt="img3"
@@ -40,7 +40,7 @@
         </button>
       </li>
       <li>
-        <button class="btn">
+        <button class="btn" onclick="fun6()">
           <img
             src="https://images.unsplash.com/photo-1551695003-d514cfd6ca65?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8Zmxvd2VyLGJsdWV8fHx8fHwxNjc1MjYzMzQ1&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"
             alt="img4"
@@ -57,40 +57,52 @@
         <table>
           <tr>
             <td>Name</td>
-            <td><input type="text" placeholder="Name" id="naam" required /></td>
+            <td><input type="text" id="naam" required minlength="2" /></td>
           </tr>
+
           <tr>
             <td>Username</td>
             <td>
-              <input
-                type="text"
-                name=""
-                placeholder="Username"
-                id="uname"
-                required
-              />
+              <input type="text" id="uname" required />
             </td>
           </tr>
 
           <tr>
             <td>Email</td>
             <td>
-              <input type="email" id="mail" placeholder="Email" required />
+              <input type="email" id="mail" required />
             </td>
           </tr>
 
           <tr>
             <td>
-              <button type="submit" onclick="fun2()">SUBMIT</button>
+              <input type="submit" onclick="fun2()" value="SUBMIT" />
             </td>
           </tr>
         </table>
       </fieldset>
+      <p id="warn" style="color: rgb(255, 0, 0)"></p>
     </div>
 
-    <div id="div2">
-      <h1></h1>
+    <div id="div2" style="margin: 30px 10px"></div>
+
+    <div id="div3" style="margin: 30px 10px">
+      <button id="dice" onclick="fun5()">
+        <img
+          src="https://images.unsplash.com/photo-1605870445919-838d190e8e1b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZGljZXx8fHx8fDE2NzUyNjkzODU&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200"
+          alt="dice"
+        />
+        <h3>Roll the DICE</h3>
+      </button>
+      <div id="score">
+        <h3>Details are as follows:</h3>
+        <h3>Attempt No.: 0 / 2</h3>
+        <h3>Roll: 0 / 3</h3>
+        <h3>Score: 0</h3>
+      </div>
     </div>
+
+    <div id="div4" style="margin: 30px 10px"></div>
 
     <script src="index.js"></script>
   </body>

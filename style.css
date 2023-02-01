@@ -16,3 +16,9 @@ button {
 .hide {
   display: none;
 }
+
+.div3show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
