@@ -10,42 +10,88 @@
   <body>
     <ul>
       <li>
-        <button>
+        <button class="btn" onclick="fun1()">
           <img
             src="https://images.unsplash.com/photo-1517842706803-3f0f99596c34?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8Zmxvd2VyLGJsdWV8fHx8fHwxNjc1MjYzMzc3&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"
             alt="img1"
           />
-          <h3>Button1</h3>
+          <h3>Register Yourself</h3>
         </button>
       </li>
       <li>
-        <button>
+        <button class="btn" onclick="fun3()">
           <img
             src="https://images.unsplash.com/photo-1656590603888-60eb054850db?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8Zmxvd2VyLGJsdWV8fHx8fHwxNjc1MjYzMzk2&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"
             alt="img2"
           />
-          <h3>Button2</h3>
+          <h3>Show My Details</h3>
         </button>
       </li>
       <li>
-        <button>
+        <button class="btn">
           <img
             src="https://images.unsplash.com/photo-1524219726159-3cbf91ce4b70?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8Zmxvd2VyfHx8fHx8MTY3NTI2MzMxNQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"
             alt="img3"
           />
-          <h3>Button3</h3>
+          <h3>
+            Get score >=10 in 3 clicks on
+            <b><i style="color: rgb(255, 12, 12)">DICE</i></b>
+          </h3>
         </button>
       </li>
       <li>
-        <button>
+        <button class="btn">
           <img
             src="https://images.unsplash.com/photo-1551695003-d514cfd6ca65?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8Zmxvd2VyLGJsdWV8fHx8fHwxNjc1MjYzMzQ1&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"
             alt="img4"
           />
-          <h3>Button4</h3>
+          <h3>Grab your winning coupon</h3>
         </button>
       </li>
     </ul>
+
+    <div id="div1" style="margin: 30px 10px">
+      <h1 style="color: blueviolet">Register Yourself</h1>
+      <fieldset>
+        <legend>FORM</legend>
+        <table>
+          <tr>
+            <td>Name</td>
+            <td><input type="text" placeholder="Name" id="naam" required /></td>
+          </tr>
+          <tr>
+            <td>Username</td>
+            <td>
+              <input
+                type="text"
+                name=""
+                placeholder="Username"
+                id="uname"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Email</td>
+            <td>
+              <input type="email" id="mail" placeholder="Email" required />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <button type="submit" onclick="fun2()">SUBMIT</button>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </div>
+
+    <div id="div2">
+      <h1></h1>
+    </div>
+
     <script src="index.js"></script>
   </body>
 </html>

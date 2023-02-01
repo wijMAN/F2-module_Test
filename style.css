@@ -12,3 +12,7 @@ ul {
 button {
   margin: 5px 10px;
 }
+
+.hide {
+  display: none;
+}
