@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 300px;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+button {
+  margin: 5px 10px;
+}
