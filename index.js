@@ -90,12 +90,13 @@ let fun5 = () => {
       
       <h3>As your score is ${score}, which is less than 10. Thus start your 2nd attempt, with a 0 score. </h3>
       `;
+      alert("Start your 2nd attempt");
       attempt++;
       score = 0;
       roll = 0;
     } else {
       document.getElementById("score").innerHTML = `
-      <h3> BAD LUCK</h3>
+      <h3 style="color: red;"> BAD LUCK</h3>
   <h3>You have exhausted all your attempts. Restart the game by refeshing the page </h3>
   `;
       document.getElementById("dice").disabled = true;
@@ -106,6 +107,7 @@ let fun5 = () => {
         <h3>Details are as follows:</h3>
         <h3>Attempt No.: ${attempt} / 2</h3>
         <h3>Roll:  ${roll} / 3</h3>
+        <h3>You got a ${temp}</h3>
         <h3>Score: ${score} </h3>
   `;
   }
@@ -117,15 +119,25 @@ let fun6 = () => {
   div3.add("hide");
 
   let temp = Math.floor(Math.random() * 8) + 1;
+  let arr = ["a", "s", "d", "F", "G", "z", "j", "U", "T", "p", "q"];
   let a = "" + temp;
   for (let i = 0; i < 11; i++) {
     temp = Math.floor(Math.random() * 10);
-    a += temp;
+    if (i % 2 == 0) {
+      a += temp;
+    } else {
+      a += arr[temp];
+    }
   }
   document.getElementById("div4").innerHTML = `
   <h3 style="color: red;">
   Your 12 digit winning coupon is: <span style="color: black" >${a}</span>
   </h3>
+  <img
+  style="margin: 30px 10px"
+            src="https://images.unsplash.com/photo-1576610981602-438b2860eb77?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=150&ixid=MnwxfDB8MXxyYW5kb218MHx8Y29uZ3JhdHMsdHJvcGhpZXx8fHx8fDE2NzUyOTE5MTU&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=350"
+            alt="congo"
+          />
 
   <h3 style="color: green;">
   Restart the game by reloading the page.
